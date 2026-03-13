@@ -912,7 +912,7 @@ function Documents({ t }) {
           <h2 className="sec-title">{t.docsTitle}</h2>
           <p className="sec-sub" style={{ margin: "0 auto" }}>{t.docsSub}</p>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }} className="reveal" style={{ transitionDelay: ".1s" }}>
+        <div className="reveal" style={{ display: "flex", flexDirection: "column", gap: 12, transitionDelay: ".1s" }}>
           {t.docs.map((d, i) => (
             <div key={d.title} className="doc-item" style={{ transitionDelay: `${i * .06}s` }}>
               <div style={{ fontSize: "1.5rem" }}>{d.icon}</div>
