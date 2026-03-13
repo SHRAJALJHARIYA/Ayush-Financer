@@ -152,8 +152,8 @@ const T = {
 ### Change Contact Number
 Edit `WA_NUM` and `PHONE` variables:
 ```javascript
-const WA_NUM = "+916265678158";
-const PHONE = "+916265678158";
+const WA_NUM = "+-contactNo.";
+const PHONE = "+-contactNo.";
 ```
 
 ### Add Your Photo
@@ -207,7 +207,7 @@ Update the `T` object with your own text, testimonials, and services.
 ### WhatsApp Integration
 **Chat Link:**
 ```
-https://wa.me/+916265678158
+https://wa.me/+-contactNo.
 ```
 
 **Application Form sends:**
@@ -323,7 +323,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For questions or issues:
 - **Email**: ayushjhariya@example.com
-- **WhatsApp**: [Chat directly](https://wa.me/916265678158)
+- **WhatsApp**: [Chat directly](https://wa.me/-contactNo.)
 - **Location**: Nainpur, M.P., India
 
 ---
