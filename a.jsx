@@ -133,852 +133,918 @@ const T = {
     steps: [
       { icon: "🛒", title: "प्रोडक्ट चुनें", desc: "बताएं कि आप कौन सी इलेक्ट्रॉनिक्स खरीदना चाहते हैं।" },
       { icon: "📄", title: "दस्तावेज़ जमा करें", desc: "सिर्फ आधार, पैन, बैंक स्टेटमेंट — बस इतना काफी।" },
-      { icon: "✅", title: "त्वरित अप्रूवल", desc: "बजाज फाइनेंस जल्दी अप्रूव करता है — अक्सर उसी दिन।" },
-      { icon: "🎉", title: "प्रोडक्ट घर ले जाएं", desc: "आसान मासिक EMI में भुगतान करते हुए प्रोडक्ट घर ले जाएं।" },
+      { icon: "✅", title: "तेज़ अप्रूवल", desc: "बजाज फाइनेंस तेज़ी से आपके आवेदन को मंजूरी दे देता है।" },
+      { icon: "🎉", title: "प्रोडक्ट ले जाएं", desc: "अपना प्रोडक्ट घर ले जाएं और आसान महीने EMI भुगतान करें।" },
     ],
     calcTag: "EMI कैलकुलेटर",
-    calcTitle: "अपनी मासिक EMI कैलकुलेट करें",
-    calcSub: "देखें बजाज EMI पर आपका सपना कितना किफायती हो सकता है।",
+    calcTitle: "अपना मासिक EMI कैलकुलेट करें",
+    calcSub: "देखें कि बजाज EMI पर आपने इलेक्ट्रॉनिक्स कितना किफायती हो सकते हैं।",
     calcPrice: "प्रोडक्ट की कीमत (₹)",
     calcDown: "डाउन पेमेंट (₹)",
     calcMonths: "अवधि (महीने)",
     calcMonthly: "मासिक EMI",
-    calcPerMonth: "प्रति माह",
-    calcDisclaimer: "*अनुमानित। वास्तविक EMI बजाज फाइनेंस की शर्तों के अनुसार।",
-    calcApply: "इस EMI पर अप्लाई करें",
+    calcPerMonth: "प्रति महीना",
+    calcDisclaimer: "*संकेतात्मक। वास्तविक EMI बजाज फाइनेंस की शर्तों के अनुसार।",
+    calcApply: "इस EMI के लिए आवेदन करें",
     docsTag: "आवश्यक दस्तावेज़",
-    docsTitle: "सिर्फ ज़रूरी दस्तावेज़",
-    docsSub: "तेज़ बजाज फाइनेंस अप्रूवल के लिए सिर्फ 5 दस्तावेज़।",
+    docsTitle: "केवल न्यूनतम दस्तावेज़",
+    docsSub: "बजाज फाइनेंस की तेज़ मंजूरी के लिए सिर्फ 5 बुनियादी दस्तावेज़।",
     docs: [
-      { icon: "🪪", title: "आधार कार्ड", desc: "ओरिजिनल + फोटोकॉपी" },
+      { icon: "🪪", title: "आधार कार्ड", desc: "मूल + फोटोकॉपी" },
       { icon: "💳", title: "पैन कार्ड", desc: "फाइनेंस के लिए अनिवार्य" },
       { icon: "🏦", title: "बैंक स्टेटमेंट", desc: "पिछले 3 महीने" },
-      { icon: "📷", title: "पासपोर्ट फोटो", desc: "2 हाल की फोटो" },
-      { icon: "📱", title: "मोबाइल नंबर", desc: "आधार से लिंक्ड" },
+      { icon: "📷", title: "पासपोर्ट फोटो", desc: "2 हाल की तस्वीरें" },
+      { icon: "📱", title: "मोबाइल नंबर", desc: "आधार से जुड़ा हुआ" },
     ],
     testiTag: "ग्राहक समीक्षाएं",
     testiTitle: "हमारे ग्राहक क्या कहते हैं",
     testiSub: "नैनपुर के असली ग्राहकों की असली कहानियां।",
     testimonials: [
-      { name: "रमेश यादव", city: "नैनपुर", product: "Samsung TV", text: "आयुष भाई ने बहुत जल्दी मेरे लिए Samsung TV का लोन अप्रूव करवाया। बहुत कम documents लगे। बहुत अच्छी सेवा!", rating: 5 },
-      { name: "प्रिया तिवारी", city: "नैनपुर", product: "iPhone 14", text: "iPhone के लिए उसी दिन EMI मिल गई! आयुष भाई बहुत helpful हैं। बजाज फाइनेंस का process एकदम आसान था।", rating: 5 },
-      { name: "सुरेश पटेल", city: "मंडला", product: "LG Washing Machine", text: "वाशिंग मशीन के लिए EMI लेनी थी, आयुष भाई ने घर आकर सब documents ले लिए और उसी दिन अप्रूव हो गया!", rating: 5 },
-      { name: "कविता शर्मा", city: "नैनपुर", product: "Split AC", text: "गर्मी में AC लेनी थी पर budget नहीं था। आयुष भाई ने बहुत सस्ती EMI पे AC दिलवाया। शुक्रिया!", rating: 5 },
+      { name: "रमेश यादव", city: "नैनपुर", product: "Samsung TV", text: "आयुष भाई ने बहुत जल्दी मेरे लिए Samsung TV का लोन अप्रूव करवाया। बहुत कम दस्तावेज़ लगे। बेहद सुझाव दिया!", rating: 5 },
+      { name: "प्रिया तिवारी", city: "नैनपुर", product: "iPhone 14", text: "iPhone के लिए same day EMI मिल गई! आयुष भाई बहुत मदद्गार हैं। बजाज फाइनेंस की प्रक्रिया बिलकुल आसान थी।", rating: 5 },
+      { name: "सुरेश पटेल", city: "मंडला", product: "LG वाशिंग मशीन", text: "वाशिंग मशीन के लिए EMI लेनी थी, आयुष भाई ने घर आकर सब दस्तावेज़ ले लिए और उसी दिन अप्रूव हो गया!", rating: 5 },
+      { name: "कविता शर्मा", city: "नैनपुर", product: "Split AC", text: "गर्मी में AC लेनी थी पर बजट नहीं था। आयुष भाई ने बहुत सस्ती EMI पर AC दिलवाया। धन्यवाद!", rating: 5 },
     ],
-    applyTag: "शुरू करें",
-    applyTitle: "आज ही बजाज फाइनेंस के लिए अप्लाई करें",
-    applySub: "यह फॉर्म भरें और हम 30 मिनट में WhatsApp पर संपर्क करेंगे।",
+    applyTag: "शुरु करें",
+    applyTitle: "आज ही बजाज फाइनेंस के लिए आवेदन करें",
+    applySub: "यह फॉर्म भरें और हम 30 मिनट में आपको WhatsApp पर संपर्क करेंगे।",
     formName: "पूरा नाम",
     formPhone: "फोन नंबर",
-    formCity: "शहर / गांव",
+    formCity: "शहर / गाँव",
     formProduct: "प्रोडक्ट का नाम",
     formPrice: "प्रोडक्ट की कीमत (₹)",
-    formSubmit: "WhatsApp से सबमिट करें",
-    formNote: "आपका विवरण सीधे WhatsApp पर जाएगा। 100% सुरक्षित।",
-    formSuccess: "आवेदन भेज दिया गया!",
-    formSuccessMsg: "हम 30 मिनट में WhatsApp पर संपर्क करेंगे।",
-    formAgain: "फिर से अप्लाई करें",
+    formSubmit: "WhatsApp पर जमा करें",
+    formNote: "आपका विवरण सीधे WhatsApp पर जाता है। 100% सुरक्षित।",
+    formSuccess: "आवेदन भेजा गया!",
+    formSuccessMsg: "हम 30 मिनट में आपको WhatsApp पर संपर्क करेंगे।",
+    formAgain: "फिर से आवेदन करें",
     contactTag: "संपर्क",
-    contactTitle: "संपर्क करें",
-    contactSub: "कोई सवाल है? हम हमेशा मदद के लिए तैयार हैं।",
-    contactWa: "अभी WhatsApp पर बात करें",
+    contactTitle: "हमसे जुड़ें",
+    contactSub: "कोई सवाल है? हम हमेशा मदद के लिए खुश हैं।",
+    contactWa: "अभी WhatsApp पर चैट करें",
     footerRole: "बजाज फाइनेंस कंसल्टेंट",
-    footerCity: "नैनपुर, मध्यप्रदेश",
+    footerCity: "नैनपुर, मध्य प्रदेश",
     toggleLang: "View in English",
     toggleDark: "डार्क मोड",
     toggleLight: "लाइट मोड",
-    loanAmt: "लोन राशि",
+    loanAmt: "ऋण राशि",
     totalInt: "कुल ब्याज",
     totalAmt: "कुल राशि",
     required: "✓ आवश्यक",
-    applyNow: "अप्लाई करें →",
-    waNav: "WhatsApp",
-    hireMe: "अप्लाई करें",
-    ctaBanner: "अप्लाई करने के लिए तैयार हैं? सिर्फ 5 मिनट लगेंगे।",
-    ctaBannerSub: "500+ खुश ग्राहकों के साथ जुड़ें जिन्होंने आयुष झारिया पर भरोसा किया।",
-    proTip: "टिप: WhatsApp पर documents भेजें — उसी दिन अप्रूवल पाएं।",
+    applyNow: "अभी आवेदन करें →",
+    waNav: "व्हाट्सएप",
+    hireMe: "अभी आवेदन करें",
+    ctaBanner: "आवेदन के लिए तैयार? इसमें सिर्फ 5 मिनट लगते हैं।",
+    ctaBannerSub: "500+ खुश ग्राहकों के साथ जुड़ें जिन्होंने आयुष झारिया पर विश्वास किया।",
+    proTip: "प्रो टिप: same-day approval के लिए WhatsApp पर दस्तावेज़ भेजें।",
   }
 };
 
-const WA_NUM = "+916265678158";
-const PHONE = "+916265678158";
-const WA_LINK = `https://wa.me/${WA_NUM}`;
-const WA_APPLY = `https://wa.me/${WA_NUM}?text=Namaste%20Ayush%20Sir!%20Mujhe%20Bajaj%20Finance%20EMI%20ke%20baare%20mein%20jaankari%20chahiye.`;
+const PHONE = "919424045678";
+const WA_LINK = `https://wa.me/${PHONE}`;
 
-// ─── CSS ──────────────────────────────────────────────────────────────────────
-const makeCSS = (dark) => `
-  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Yatra+One&family=Poppins:wght@400;600;700&display=swap');
+// ─── CSS GENERATOR ────────────────────────────────────────────────────────────
+function makeCSS(dark) {
+  return `
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --sky: #3b82f6;
+      --sky-dark: #1e40af;
+      --accent: #06b6d4;
+      --success: #10b981;
+      --warn: #f59e0b;
+      --heading: ${dark ? "#f8fafc" : "#0f172a"};
+      --text: ${dark ? "#cbd5e1" : "#1e293b"};
+      --muted: ${dark ? "#94a3b8" : "#64748b"};
+      --border: ${dark ? "#334155" : "#e2e8f0"};
+      --bg: ${dark ? "#0f172a" : "#ffffff"};
+      --bg-secondary: ${dark ? "#1e293b" : "#f8fafc"};
+      --input-bg: ${dark ? "#1e293b" : "#ffffff"};
+      --input-border: ${dark ? "#334155" : "#cbd5e1"};
+    }
+    
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ─── TYPOGRAPHY ─── */
+    h1, h2, h3, h4, h5, h6 { color: var(--heading); line-height: 1.2; font-weight: 700; }
+    h1 { font-size: 3.2rem; }
+    h2 { font-size: 2.2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
 
-  :root {
-    --blue:    #2563eb;
-    --blue2:   #1d4ed8;
-    --sky:     #60a5fa;
-    --green:   #25D366;
-    --bajaj:   #e84040;
+    /* ─── NAVBAR ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 70px;
+      background: rgba(${dark ? "15,23,42" : "255,255,255"}, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      padding: 0 5%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
 
-    ${dark ? `
-    --bg:      #0f172a;
-    --bg2:     #1e293b;
-    --card:    #1e293b;
-    --border:  #334155;
-    --text:    #f1f5f9;
-    --muted:   #94a3b8;
-    --heading: #f8fafc;
-    --invert:  #1e293b;
-    ` : `
-    --bg:      #f8fafc;
-    --bg2:     #ffffff;
-    --card:    #ffffff;
-    --border:  #e2e8f0;
-    --text:    #1e293b;
-    --muted:   #64748b;
-    --heading: #0f172a;
-    --invert:  #f8fafc;
-    `}
-  }
+    .nav-content {
+      max-width: 1400px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
 
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    overflow-x: hidden;
-    transition: background 0.3s, color 0.3s;
-  }
+    .nav-brand {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--sky);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
 
-  ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: var(--bg2); }
-  ::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 10px; }
+    .nav-menu {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      flex: 1;
+      margin-left: 3rem;
+    }
 
-  /* Animations */
-  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
-  @keyframes fadeIn { from{opacity:0} to{opacity:1} }
-  @keyframes float  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-  @keyframes waPulse{ 0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)} 70%{box-shadow:0 0 0 14px rgba(37,211,102,0)} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0)} }
-  @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
-  @keyframes shimmer{ 0%{background-position:-200% 0} 100%{background-position:200% 0} }
+    .nav-menu a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.2s;
+      position: relative;
+    }
 
-  .afu { animation: fadeUp 0.6s ease both; }
+    .nav-menu a:hover {
+      color: var(--sky);
+      transform: translateY(-2px);
+    }
 
-  .reveal { opacity:0; transform:translateY(24px); transition:opacity .65s ease,transform .65s ease; }
-  .reveal.in { opacity:1; transform:translateY(0); }
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--sky);
+      transition: width 0.3s;
+    }
 
-  /* Navbar */
-  .navbar {
-    position:fixed; top:0; left:0; right:0; z-index:1000;
-    height:64px; padding:0 5%;
-    display:flex; align-items:center; justify-content:space-between;
-    background:${dark ? "rgba(15,23,42,0.95)" : "rgba(255,255,255,0.97)"};
-    border-bottom:1px solid var(--border);
-    backdrop-filter:blur(12px);
-    transition:box-shadow .3s, background .3s;
-  }
-  .navbar.scrolled { box-shadow:0 2px 20px rgba(0,0,0,.1); }
+    .nav-menu a:hover::after {
+      width: 100%;
+    }
 
-  .nav-logo-name {
-    font-family:'Yatra One', cursive;
-    font-size:1.2rem; color:var(--heading); line-height:1.1;
-  }
-  .nav-logo-sub {
-    font-size:0.62rem; font-weight:600;
-    color:var(--bajaj); letter-spacing:.06em; text-transform:uppercase; margin-top:1px;
-  }
-  .nav-links { display:flex; gap:22px; align-items:center; }
-  .nav-link {
-    font-size:.78rem; font-weight:500; color:var(--muted);
-    background:none; border:none; cursor:pointer; padding:3px 0;
-    position:relative; transition:color .2s;
-  }
-  .nav-link::after {
-    content:''; position:absolute; bottom:0; left:0;
-    width:0; height:2px; background:var(--blue);
-    transition:width .25s; border-radius:2px;
-  }
-  .nav-link:hover { color:var(--blue); }
-  .nav-link:hover::after { width:100%; }
+    .nav-controls {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
 
-  .btn-wa-sm {
-    display:flex; align-items:center; gap:6px;
-    background:var(--green); color:white;
-    border:none; cursor:pointer; padding:7px 14px;
-    border-radius:8px; font-size:.75rem; font-weight:600;
-    transition:background .2s, transform .2s; text-decoration:none;
-  }
-  .btn-wa-sm:hover { background:#1eb858; transform:scale(1.03); }
+    .nav-btn {
+      padding: 8px 16px;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--text);
+      transition: all 0.3s;
+      font-weight: 500;
+    }
 
-  .toggle-btn {
-    background:var(--card); border:1px solid var(--border);
-    color:var(--muted); cursor:pointer;
-    padding:6px 12px; border-radius:8px;
-    font-size:.7rem; font-weight:600;
-    transition:all .2s; white-space:nowrap;
-  }
-  .toggle-btn:hover { border-color:var(--blue); color:var(--blue); }
+    .nav-btn:hover {
+      border-color: var(--sky);
+      color: var(--sky);
+      background: rgba(59, 130, 246, 0.05);
+    }
 
-  /* Buttons */
-  .btn-primary {
-    display:inline-flex; align-items:center; gap:7px;
-    background:var(--blue); color:white; border:none; cursor:pointer;
-    padding:13px 26px; border-radius:10px;
-    font-family:'Plus Jakarta Sans',sans-serif; font-size:.88rem; font-weight:600;
-    transition:all .2s; text-decoration:none;
-    box-shadow:0 4px 14px rgba(37,99,235,.3);
-  }
-  .btn-primary:hover { background:var(--blue2); transform:translateY(-2px); box-shadow:0 6px 20px rgba(37,99,235,.4); }
+    /* ─── HERO ─── */
+    .hero {
+      margin-top: 70px;
+      padding: 100px 5%;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a6e 50%, #1e40af 100%);
+      position: relative;
+      overflow: hidden;
+      color: white;
+    }
 
-  .btn-wa {
-    display:inline-flex; align-items:center; gap:7px;
-    background:var(--green); color:white; border:none; cursor:pointer;
-    padding:13px 26px; border-radius:10px;
-    font-family:'Plus Jakarta Sans',sans-serif; font-size:.88rem; font-weight:600;
-    transition:all .2s; text-decoration:none;
-  }
-  .btn-wa:hover { background:#1eb858; transform:translateY(-2px); }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
 
-  .btn-outline {
-    display:inline-flex; align-items:center; gap:7px;
-    background:transparent; color:var(--blue);
-    border:2px solid var(--blue); cursor:pointer;
-    padding:10px 22px; border-radius:10px;
-    font-family:'Plus Jakarta Sans',sans-serif; font-size:.82rem; font-weight:600;
-    transition:all .2s; text-decoration:none;
-  }
-  .btn-outline:hover { background:var(--blue); color:white; transform:translateY(-2px); }
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      animation: slideUp 0.8s ease-out;
+    }
 
-  /* Hero */
-  .hero {
-    min-height:100vh;
-    background:linear-gradient(135deg,#0f172a 0%,#1e3a6e 55%,#0f172a 100%);
-    display:flex; align-items:center;
-    padding:80px 5% 60px;
-    position:relative; overflow:hidden;
-  }
-  .hero::before {
-    content:''; position:absolute; inset:0;
-    background:radial-gradient(ellipse at 60% 40%,rgba(37,99,235,.2) 0%,transparent 65%);
-    pointer-events:none;
-  }
-  .hero-dots {
-    position:absolute; inset:0; pointer-events:none;
-    background-image:radial-gradient(rgba(96,165,250,.1) 1px, transparent 1px);
-    background-size:28px 28px;
-  }
-  .hero-inner {
-    position:relative; z-index:1;
-    display:grid; grid-template-columns:1fr 1.2fr;
-    gap:60px; align-items:center; max-width:1100px; width:100%;
-  }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
 
-  /* Photo side */
-  .photo-wrap {
-    display:flex; flex-direction:column; align-items:center; gap:16px;
-  }
-  .photo-frame {
-    width:260px; height:260px; border-radius:50%;
-    background:linear-gradient(135deg,#2563eb,#60a5fa);
-    padding:4px;
-    box-shadow:0 0 0 8px rgba(37,99,235,.15), 0 20px 60px rgba(0,0,0,.4);
-    animation:float 4s ease-in-out infinite;
-    flex-shrink:0;
-  }
-  .photo-inner {
-    width:100%; height:100%; border-radius:50%;
-    background:linear-gradient(145deg,#1e3a6e,#0f172a);
-    display:flex; align-items:center; justify-content:center;
-    font-size:5rem; overflow:hidden;
-  }
-  .photo-inner img { width:100%; height:100%; object-fit:cover; border-radius:50%; }
-  .bajaj-badge {
-    display:inline-flex; align-items:center; gap:8px;
-    background:var(--bajaj); color:white;
-    padding:8px 18px; border-radius:20px;
-    font-size:.78rem; font-weight:700; letter-spacing:.04em;
-    box-shadow:0 4px 16px rgba(232,64,64,.4);
-  }
+    .hero p {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
 
-  /* Info side */
-  .hero-tag {
-    display:inline-flex; align-items:center; gap:8px;
-    background:rgba(37,99,235,.2); border:1px solid rgba(96,165,250,.3);
-    color:var(--sky); padding:5px 14px; border-radius:20px;
-    font-size:.7rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
-    margin-bottom:18px;
-  }
-  .hero-name {
-    font-family:'Yatra One', cursive;
-    font-size:clamp(2rem,5vw,3.4rem); color:white; line-height:1.15; margin-bottom:6px;
-  }
-  .hero-role { font-size:1.05rem; color:var(--sky); font-weight:600; margin-bottom:16px; }
-  .hero-desc { font-size:.92rem; color:rgba(255,255,255,.65); line-height:1.8; margin-bottom:30px; max-width:480px; }
-  .trust-badges { display:flex; gap:18px; flex-wrap:wrap; margin-top:20px; }
-  .trust-item { display:flex; align-items:center; gap:6px; color:rgba(255,255,255,.6); font-size:.75rem; font-weight:500; }
+    .hero-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-  /* Ticker */
-  .ticker-wrap { background:var(--bajaj); overflow:hidden; padding:9px 0; white-space:nowrap; }
-  .ticker-inner { display:inline-block; animation:ticker 30s linear infinite; }
-  .ticker-item { display:inline-flex; align-items:center; gap:8px; color:white; font-size:.78rem; font-weight:600; padding:0 28px; }
-  .ticker-dot { width:4px; height:4px; border-radius:50%; background:rgba(255,255,255,.5); }
+    /* ─── BUTTONS ─── */
+    .btn-primary {
+      padding: 14px 32px;
+      background: var(--sky);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
 
-  /* Sections */
-  .section { padding:88px 5%; background:var(--bg); transition:background .3s; }
-  .section-alt { background:var(--bg2); }
+    .btn-primary:hover {
+      background: var(--sky-dark);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+      transform: translateY(-2px);
+    }
 
-  .sec-tag { font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--blue); margin-bottom:10px; }
-  .sec-title { font-family:'Yatra One',cursive; font-size:clamp(1.7rem,3.5vw,2.4rem); color:var(--heading); line-height:1.25; margin-bottom:12px; }
-  .sec-sub { font-size:.95rem; color:var(--muted); line-height:1.75; max-width:540px; }
+    .btn-wa {
+      padding: 14px 32px;
+      background: #25d366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      text-decoration: none;
+    }
 
-  /* About */
-  .about-inner { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; max-width:1100px; margin:0 auto; }
-  .stat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px; }
-  .stat-card {
-    background:var(--card); border:1px solid var(--border); border-radius:14px;
-    padding:20px 16px; text-align:center;
-    box-shadow:0 2px 8px rgba(0,0,0,.06);
-    transition:transform .25s, box-shadow .25s;
-  }
-  .stat-card:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(37,99,235,.12); }
-  .stat-num { font-family:'Yatra One',cursive; font-size:2rem; color:var(--blue); line-height:1; }
-  .stat-lbl { font-size:.75rem; color:var(--muted); margin-top:4px; }
+    .btn-wa:hover {
+      background: #1fa857;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+      transform: translateY(-2px);
+    }
 
-  /* Services */
-  .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  .svc-card {
-    background:var(--card); border:1px solid var(--border); border-radius:14px;
-    padding:26px 22px; transition:all .3s;
-  }
-  .svc-card:hover { border-color:var(--blue); box-shadow:0 8px 28px rgba(37,99,235,.12); transform:translateY(-5px); }
-  .svc-icon {
-    width:50px; height:50px; border-radius:12px;
-    background:${dark ? "rgba(37,99,235,.2)" : "linear-gradient(135deg,#eff6ff,#dbeafe)"};
-    display:flex; align-items:center; justify-content:center;
-    font-size:1.4rem; margin-bottom:14px; transition:transform .3s;
-  }
-  .svc-card:hover .svc-icon { transform:scale(1.1); }
-  .svc-title { font-size:.95rem; font-weight:700; color:var(--heading); margin-bottom:8px; }
-  .svc-desc { font-size:.8rem; color:var(--muted); line-height:1.65; }
+    .btn-secondary {
+      padding: 14px 32px;
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
 
-  /* Steps */
-  .steps-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
-  .step-card {
-    background:var(--card); border:1px solid var(--border); border-radius:14px;
-    padding:26px 20px; position:relative; margin-top:20px;
-    transition:box-shadow .25s, transform .25s;
-  }
-  .step-card:hover { box-shadow:0 8px 28px rgba(37,99,235,.1); transform:translateY(-4px); }
-  .step-num {
-    position:absolute; top:-18px; left:22px;
-    width:36px; height:36px; background:var(--blue); color:white;
-    border-radius:50%; display:flex; align-items:center; justify-content:center;
-    font-weight:800; font-size:.82rem; box-shadow:0 4px 12px rgba(37,99,235,.35);
-  }
+    .btn-secondary:hover {
+      background: white;
+      color: var(--sky-dark);
+    }
 
-  /* Calculator */
-  .calc-grid {
-    display:grid; grid-template-columns:1fr 1fr;
-    background:var(--card); border-radius:20px;
-    box-shadow:0 8px 40px rgba(0,0,0,.1); overflow:hidden;
-    max-width:800px; margin:0 auto;
-    border:1px solid var(--border);
-  }
-  .calc-form { padding:38px; }
-  .calc-result {
-    background:linear-gradient(160deg,#0f172a,#1e3a6e);
-    padding:38px; display:flex; flex-direction:column;
-    align-items:center; justify-content:center; text-align:center;
-  }
-  .ci { width:100%; padding:11px 14px; background:var(--bg); border:1.5px solid var(--border); border-radius:8px; font-family:'Plus Jakarta Sans',sans-serif; font-size:.88rem; color:var(--text); outline:none; transition:border-color .2s; margin-bottom:16px; }
-  .ci:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(37,99,235,.1); }
-  .cl { font-size:.78rem; font-weight:600; color:var(--text); margin-bottom:5px; display:block; }
-  .emi-big { font-family:'Yatra One',cursive; font-size:3rem; color:var(--sky); line-height:1; }
+    /* ─── SECTIONS ─── */
+    .section {
+      padding: 88px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-  /* Docs */
-  .doc-item {
-    display:flex; align-items:center; gap:14px;
-    background:var(--card); border:1px solid var(--border);
-    border-radius:10px; padding:16px 20px; transition:all .25s;
-  }
-  .doc-item:hover { border-color:var(--blue); box-shadow:0 4px 16px rgba(37,99,235,.1); transform:translateX(4px); }
+    .section-alt {
+      background: var(--bg-secondary);
+    }
 
-  /* Testimonials */
-  .testi-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
-  .testi-card {
-    background:var(--card); border:1px solid var(--border); border-radius:16px;
-    padding:26px; transition:all .25s;
-  }
-  .testi-card:hover { box-shadow:0 8px 28px rgba(37,99,235,.1); transform:translateY(-4px); }
+    .sec-tag {
+      color: var(--sky);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.8rem;
+    }
 
-  /* Form */
-  .form-box {
-    background:var(--card); border-radius:20px;
-    padding:42px 46px; max-width:620px; margin:0 auto;
-    box-shadow:0 8px 40px rgba(0,0,0,.1);
-    border:1px solid var(--border);
-  }
-  .fi { width:100%; padding:12px 15px; background:var(--bg); border:1.5px solid var(--border); border-radius:10px; font-family:'Plus Jakarta Sans',sans-serif; font-size:.88rem; color:var(--text); outline:none; transition:all .2s; margin-bottom:14px; }
-  .fi:focus { border-color:var(--blue); background:var(--card); box-shadow:0 0 0 3px rgba(37,99,235,.08); }
-  .fl { font-size:.78rem; font-weight:600; color:var(--text); margin-bottom:5px; display:block; }
-  .frow { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .sec-title {
+      color: var(--heading);
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
 
-  /* Contact */
-  .contact-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:32px; }
-  .cc {
-    background:var(--card); border:1px solid var(--border); border-radius:14px;
-    padding:22px 24px; display:flex; align-items:center; gap:14px; transition:all .25s;
-  }
-  .cc:hover { border-color:var(--blue); box-shadow:0 6px 20px rgba(37,99,235,.1); transform:translateY(-3px); }
-  .cc-icon { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+    .sec-sub {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 3.5rem;
+    }
 
-  /* Floating WA */
-  .wa-float {
-    position:fixed; bottom:28px; right:28px; z-index:999;
-    width:58px; height:58px; background:var(--green); border-radius:50%;
-    display:flex; align-items:center; justify-content:center; font-size:1.6rem;
-    text-decoration:none; box-shadow:0 4px 20px rgba(37,211,102,.5);
-    animation:waPulse 2.5s infinite; transition:transform .2s;
-  }
-  .wa-float:hover { transform:scale(1.1); }
+    /* ─── CARDS ─── */
+    .service-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
 
-  /* Footer */
-  .footer {
-    background:#0f172a; color:rgba(255,255,255,.55);
-    padding:36px 5%; text-align:center; font-size:.8rem; line-height:1.8;
-  }
-  .footer a { color:var(--sky); text-decoration:none; }
+    .service-card:hover {
+      border-color: var(--sky);
+      box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
+      transform: translateY(-8px);
+    }
 
-  @media(max-width:960px){
-    .hero-inner { grid-template-columns:1fr; text-align:center; }
-    .photo-wrap { margin-bottom:0; }
-    .hero-desc { margin:0 auto 30px; }
-    .trust-badges { justify-content:center; }
-    .about-inner { grid-template-columns:1fr; }
-    .services-grid { grid-template-columns:repeat(2,1fr); }
-    .steps-grid { grid-template-columns:repeat(2,1fr); }
-    .nav-links { display:none; }
-  }
-  @media(max-width:600px){
-    .services-grid,.testi-grid,.contact-cards,.frow { grid-template-columns:1fr; }
-    .calc-grid { grid-template-columns:1fr; }
-    .form-box { padding:26px 18px; }
-    .section { padding:60px 5%; }
-    .photo-frame { width:200px; height:200px; }
-  }
-`;
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
 
-// ─── Reveal hook ──────────────────────────────────────────────────────────────
-function useReveal() {
-  useEffect(() => {
-    const els = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }),
-      { threshold: 0.07 }
-    );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  });
+    .service-card h3 {
+      margin-bottom: 0.8rem;
+      color: var(--heading);
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ─── GRID ─── */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    /* ─── REVEAL ANIMATION ─── */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    /* ─── CALCULATOR ─── */
+    .calc-input {
+      width: 100%;
+      padding: 12px 16px;
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .calc-input:focus {
+      outline: none;
+      border-color: var(--sky);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .calc-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .calc-label {
+      color: var(--heading);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .calc-result {
+      background: var(--bg-secondary);
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .calc-result-num {
+      font-size: 2.5rem;
+      color: var(--sky);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .calc-result-label {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* ─── FORM ─── */
+    .form-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .frow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .frow > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fl {
+      color: var(--heading);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .fi {
+      width: 100%;
+      padding: 12px 16px;
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1rem;
+      transition: all 0.3s;
+      font-family: inherit;
+    }
+
+    .fi:focus {
+      outline: none;
+      border-color: var(--sky);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonial-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .testimonial-card:hover {
+      border-color: var(--sky);
+      box-shadow: 0 12px 30px rgba(59, 130, 246, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .stars {
+      color: #fbbf24;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .testimonial-text {
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 0.25rem;
+    }
+
+    .testimonial-meta {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* ─── CONTACT CARDS ─── */
+    .cc {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      transition: all 0.3s;
+    }
+
+    .cc-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      background: #0f172a;
+      color: white;
+      padding: 3rem 5%;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer a {
+      color: var(--sky);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: var(--accent);
+    }
+
+    /* ─── FLOATING WA BUTTON ─── */
+    .wa-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s;
+      z-index: 998;
+    }
+
+    .wa-float:hover {
+      background: #1fa857;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+      transform: scale(1.1);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1rem; }
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .calc-row { grid-template-columns: 1fr; }
+      .frow { grid-template-columns: 1fr; }
+      .section { padding: 60px 5%; }
+    }
+  `;
 }
 
-// ─── NAVBAR ───────────────────────────────────────────────────────────────────
-function NavBar({ t, lang, setLang, dark, setDark }) {
-  const [scrolled, setScrolled] = useState(false);
+// ─── REVEAL HOOK ────────────────────────────────────────────────────────────
+function useReveal() {
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", fn);
-    return () => window.removeEventListener("scroll", fn);
-  }, []);
-  const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  const ids = ["home","about","services","calculator","steps","documents","contact"];
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = "1";
+          e.target.style.animationPlayState = "running";
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
+    document.querySelectorAll(".reveal").forEach(e => obs.observe(e));
+  }, []);
+}
+
+// ─── NAVBAR ──────────────────────────────────────────────────────────────────
+function NavBar({ t, lang, setLang, dark, setDark }) {
   return (
-    <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
-      <div onClick={() => go("home")} style={{ cursor: "pointer" }}>
-        <div className="nav-logo-name">{t.name}</div>
-        <div className="nav-logo-sub">Bajaj Finance Consultant</div>
-      </div>
-      <div className="nav-links">
-        {t.navItems.map((label, i) => (
-          <button key={label} className="nav-link" onClick={() => go(ids[i])}>{label}</button>
-        ))}
-        <button className="toggle-btn" onClick={() => setDark(!dark)}>
-          {dark ? "☀️" : "🌙"} {dark ? t.toggleLight : t.toggleDark}
-        </button>
-        <button className="toggle-btn" onClick={() => setLang(lang === "en" ? "hi" : "en")}>
-          🌐 {t.toggleLang}
-        </button>
-        <a className="btn-wa-sm" href={WA_LINK} target="_blank" rel="noreferrer">
-          💬 {t.waNav}
-        </a>
-      </div>
-      {/* Mobile: just icons */}
-      <div style={{ display: "flex", gap: 8 }}>
-        <button className="toggle-btn" onClick={() => setDark(!dark)} style={{ padding: "6px 10px" }}>
-          {dark ? "☀️" : "🌙"}
-        </button>
-        <button className="toggle-btn" onClick={() => setLang(lang === "en" ? "hi" : "en")} style={{ padding: "6px 10px" }}>
-          🌐
-        </button>
-        <a className="btn-wa-sm" href={WA_LINK} target="_blank" rel="noreferrer">💬</a>
+    <nav>
+      <div className="nav-content">
+        <a href="#home" className="nav-brand">⚡ {t.name}</a>
+        <ul className="nav-menu">
+          {t.navItems.map((item, i) => (
+            <li key={i}>
+              <a href={["#home", "#about", "#services", "#calc", "#steps", "#docs", "#contact"][i]}>{item}</a>
+            </li>
+          ))}
+        </ul>
+        <div className="nav-controls">
+          <button className="nav-btn" onClick={() => setLang(lang === "en" ? "hi" : "en")}>
+            {t.toggleLang}
+          </button>
+          <button className="nav-btn" onClick={() => setDark(!dark)}>
+            {dark ? "☀️" : "🌙"}
+          </button>
+        </div>
       </div>
     </nav>
   );
 }
 
-// ─── HERO ─────────────────────────────────────────────────────────────────────
+// ─── HERO ────────────────────────────────────────────────────────────────────
 function Hero({ t }) {
   return (
     <section id="home" className="hero">
-      <div className="hero-dots" />
-      <div className="hero-inner" style={{ margin: "0 auto" }}>
-
-        {/* LEFT — Photo */}
-        <div className="photo-wrap afu" style={{ animationDelay: "0s" }}>
-          <div className="photo-frame">
-            <div className="photo-inner">
-              {/* Replace img src with real photo URL */}
-              <span style={{ fontSize: "5rem" }}>👨‍💼</span>
-            </div>
-          </div>
-          <div className="bajaj-badge">
-            <span>🏢</span> Bajaj Finance Authorized
-          </div>
-          <div style={{ display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
-            {[["⭐","4.9 Rating"],["✅","500+ Customers"]].map(([icon, text]) => (
-              <div key={text} style={{
-                background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.15)",
-                color: "rgba(255,255,255,0.8)", padding: "6px 14px", borderRadius: 20,
-                fontSize: ".73rem", fontWeight: 600, display: "flex", alignItems: "center", gap: 6,
-              }}>
-                {icon} {text}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* RIGHT — Info */}
-        <div className="afu" style={{ animationDelay: "0.1s" }}>
-          <div className="hero-tag">
-            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#4ade80", display: "inline-block" }} />
-            📍 Nainpur, Madhya Pradesh
-          </div>
-          <h1 className="hero-name">{t.name}</h1>
-          <div className="hero-role">{t.role}</div>
-          <p className="hero-desc">{t.heroSub}</p>
-
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button className="btn-primary" onClick={() => document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" })}>
-              📋 {t.applyBtn}
-            </button>
-            <a className="btn-wa" href={WA_APPLY} target="_blank" rel="noreferrer">
-              💬 {t.waBtn}
-            </a>
-          </div>
-
-          <div className="trust-badges">
-            {[["⚡","Same Day Approval"],["📄","Minimal Documents"],["🔒","100% Secure"],["🏆","3+ Years Experience"]].map(([icon, text]) => (
-              <div key={text} className="trust-item"><span>{icon}</span>{text}</div>
-            ))}
-          </div>
+      <div className="hero-content">
+        <h1>{t.heroTitle}</h1>
+        <p>{t.heroSub}</p>
+        <div className="hero-buttons">
+          <button className="btn-primary">{t.applyBtn}</button>
+          <a href={`https://wa.me/${PHONE}`} target="_blank" rel="noreferrer" className="btn-secondary">
+            {t.waBtn}
+          </a>
         </div>
       </div>
     </section>
   );
 }
 
-// ─── TICKER ───────────────────────────────────────────────────────────────────
+// ─── TICKER ──────────────────────────────────────────────────────────────────
 function Ticker({ t }) {
-  const items = t.services.map(s => s.title);
-  const doubled = [...items, ...items];
   return (
-    <div className="ticker-wrap">
-      <div className="ticker-inner">
-        {doubled.map((item, i) => (
-          <span key={i} className="ticker-item">
-            <span className="ticker-dot" />{item}
-          </span>
-        ))}
+    <div style={{
+      background: "var(--bg-secondary)",
+      padding: "30px 5%",
+      display: "flex",
+      justifyContent: "space-around",
+      flexWrap: "wrap",
+      gap: "2rem",
+      borderBottom: "1px solid var(--border)",
+    }}>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: "2.5rem", fontWeight: "800", color: "var(--sky)" }}>3+</div>
+        <div style={{ color: "var(--muted)", fontSize: "0.9rem" }}>{t.statsExp}</div>
+      </div>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: "2.5rem", fontWeight: "800", color: "var(--sky)" }}>500+</div>
+        <div style={{ color: "var(--muted)", fontSize: "0.9rem" }}>{t.statsCust}</div>
+      </div>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ fontSize: "2.5rem", fontWeight: "800", color: "var(--sky)" }}>5+</div>
+        <div style={{ color: "var(--muted)", fontSize: "0.9rem" }}>{t.statsCities}</div>
       </div>
     </div>
   );
 }
 
-// ─── ABOUT ────────────────────────────────────────────────────────────────────
+// ─── ABOUT ───────────────────────────────────────────────────────────────────
 function About({ t }) {
   return (
-    <section id="about" className="section section-alt">
-      <div className="about-inner">
-        <div className="reveal">
-          <div className="sec-tag">{t.aboutTag}</div>
-          <h2 className="sec-title">{t.aboutTitle}</h2>
-          <p style={{ fontSize: ".95rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>{t.aboutP1}</p>
-          <p style={{ fontSize: ".95rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 24 }}>{t.aboutP2}</p>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <div style={{ background: "rgba(37,99,235,.08)", border: "1px solid rgba(37,99,235,.2)", color: "var(--blue)", padding: "8px 16px", borderRadius: 20, fontSize: ".78rem", fontWeight: 600 }}>
-              🏢 Bajaj Finance Authorized Agent
-            </div>
-            <div style={{ background: "rgba(37,99,235,.08)", border: "1px solid rgba(37,99,235,.2)", color: "var(--blue)", padding: "8px 16px", borderRadius: 20, fontSize: ".78rem", fontWeight: 600 }}>
-              📍 Nainpur Since 2021
-            </div>
-          </div>
-          <div className="stat-row">
-            {[["3+", t.statsExp],["500+", t.statsCust],["5+", t.statsCities]].map(([n, l]) => (
-              <div key={l} className="stat-card">
-                <div className="stat-num">{n}</div>
-                <div className="stat-lbl">{l}</div>
-              </div>
-            ))}
-          </div>
+    <section id="about" className="section">
+      <div className="reveal">
+        <div className="sec-tag">{t.aboutTag}</div>
+        <h2 className="sec-title">{t.aboutTitle}</h2>
+      </div>
+      <div className="grid-2" style={{ marginTop: "3rem", gap: "3rem", alignItems: "center" }}>
+        <div className="reveal" style={{ transitionDelay: ".1s" }}>
+          <p style={{ fontSize: "1.05rem", color: "var(--text)", lineHeight: 1.8, marginBottom: "1.5rem" }}>
+            {t.aboutP1}
+          </p>
+          <p style={{ fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8 }}>
+            {t.aboutP2}
+          </p>
         </div>
-
-        {/* Right visual panel */}
-        <div className="reveal" style={{ transitionDelay: "0.15s" }}>
-          <div style={{
-            background: "linear-gradient(135deg,#1e3a6e,#0f172a)",
-            borderRadius: 20, padding: 36, color: "white",
-          }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 24, paddingBottom: 20, borderBottom: "1px solid rgba(255,255,255,.1)" }}>
-              <div style={{ width: 60, height: 60, borderRadius: "50%", background: "rgba(255,255,255,.1)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.8rem" }}>👨‍💼</div>
-              <div>
-                <div style={{ fontFamily: "'Yatra One',cursive", fontSize: "1.1rem", color: "white" }}>{t.name}</div>
-                <div style={{ fontSize: ".75rem", color: "rgba(255,255,255,.55)", marginTop: 2 }}>{t.role}</div>
-              </div>
-            </div>
-            {[
-              ["📍","Location", "Nainpur, Mandla District, M.P."],
-              ["🏢","Company", "Bajaj Finance Ltd."],
-              ["⏱️","Working Since", "2021 — 3+ Years"],
-              ["🌍","Service Area", "Nainpur, Mandla, Seoni, Balaghat"],
-              ["📞","Phone", PHONE],
-              ["⭐","Rating", "4.9 / 5 — 500+ Reviews"],
-            ].map(([icon, label, val]) => (
-              <div key={label} style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 14 }}>
-                <span style={{ fontSize: "1.1rem", marginTop: 1 }}>{icon}</span>
-                <div>
-                  <div style={{ fontSize: ".68rem", color: "rgba(255,255,255,.4)", fontWeight: 600, textTransform: "uppercase", letterSpacing: ".06em" }}>{label}</div>
-                  <div style={{ fontSize: ".88rem", color: "rgba(255,255,255,.85)", fontWeight: 500 }}>{val}</div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="reveal" style={{ transitionDelay: ".2s", fontSize: "4rem", textAlign: "center" }}>
+          👨‍💼
         </div>
       </div>
     </section>
   );
 }
 
-// ─── SERVICES ─────────────────────────────────────────────────────────────────
+// ─── SERVICES ────────────────────────────────────────────────────────────────
 function Services({ t }) {
   return (
-    <section id="services" className="section">
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div className="reveal" style={{ textAlign: "center", marginBottom: 48 }}>
-          <div className="sec-tag">{t.servicesTag}</div>
-          <h2 className="sec-title">{t.servicesTitle}</h2>
-          <p className="sec-sub" style={{ margin: "0 auto" }}>{t.servicesSub}</p>
-        </div>
-        <div className="services-grid reveal" style={{ transitionDelay: ".1s" }}>
-          {t.services.map((s) => (
-            <div key={s.title} className="svc-card">
-              <div className="svc-icon">{s.icon}</div>
-              <div className="svc-title">{s.title}</div>
-              <div className="svc-desc">{s.desc}</div>
-              <button className="btn-outline" style={{ marginTop: 16, fontSize: ".76rem", padding: "8px 16px" }}
-                onClick={() => document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" })}>
-                {t.applyNow}
-              </button>
-            </div>
-          ))}
-        </div>
+    <section id="services" className="section section-alt">
+      <div className="reveal">
+        <div className="sec-tag">{t.servicesTag}</div>
+        <h2 className="sec-title">{t.servicesTitle}</h2>
+        <p className="sec-sub">{t.servicesSub}</p>
+      </div>
+      <div className="grid-3">
+        {t.services.map((s, i) => (
+          <div key={i} className="service-card reveal" style={{ transitionDelay: `${i * 0.05}s` }}>
+            <span className="service-icon">{s.icon}</span>
+            <h3>{s.title}</h3>
+            <p>{s.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
 }
 
-// ─── STEPS ────────────────────────────────────────────────────────────────────
+// ─── STEPS ───────────────────────────────────────────────────────────────────
 function Steps({ t }) {
   return (
-    <section id="steps" className="section section-alt">
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div className="reveal" style={{ textAlign: "center", marginBottom: 52 }}>
-          <div className="sec-tag">{t.stepsTag}</div>
-          <h2 className="sec-title">{t.stepsTitle}</h2>
-          <p className="sec-sub" style={{ margin: "0 auto" }}>{t.stepsSub}</p>
-        </div>
-        <div className="steps-grid reveal" style={{ transitionDelay: ".1s" }}>
-          {t.steps.map((s, i) => (
-            <div key={s.title} className="step-card">
-              <div className="step-num">{i + 1}</div>
-              <div style={{ fontSize: "2rem", marginBottom: 12, marginTop: 8 }}>{s.icon}</div>
-              <div style={{ fontWeight: 700, fontSize: ".95rem", color: "var(--heading)", marginBottom: 8 }}>{s.title}</div>
-              <div style={{ fontSize: ".8rem", color: "var(--muted)", lineHeight: 1.65 }}>{s.desc}</div>
+    <section id="steps" className="section">
+      <div className="reveal">
+        <div className="sec-tag">{t.stepsTag}</div>
+        <h2 className="sec-title">{t.stepsTitle}</h2>
+        <p className="sec-sub">{t.stepsSub}</p>
+      </div>
+      <div className="grid-4" style={{ marginTop: "3rem" }}>
+        {t.steps.map((step, i) => (
+          <div key={i} className="reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
+            <div style={{
+              background: "linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)",
+              width: 60,
+              height: 60,
+              borderRadius: "12px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "1.8rem",
+              marginBottom: "1.5rem",
+              color: "white",
+              fontWeight: "700"
+            }}>
+              {i + 1}
             </div>
-          ))}
-        </div>
-        {/* CTA Banner */}
-        <div className="reveal" style={{
-          marginTop: 48, background: "linear-gradient(135deg,#0f172a,#1e3a6e)",
-          borderRadius: 18, padding: "32px 36px",
-          display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 18,
-          transitionDelay: ".2s",
-        }}>
-          <div>
-            <div style={{ fontFamily: "'Yatra One',cursive", fontSize: "1.3rem", color: "white", marginBottom: 4 }}>{t.ctaBanner}</div>
-            <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".82rem" }}>{t.ctaBannerSub}</div>
+            <h4 style={{ marginBottom: "0.8rem" }}>{step.title}</h4>
+            <p style={{ color: "var(--muted)", lineHeight: 1.6 }}>{step.desc}</p>
           </div>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button className="btn-primary" onClick={() => document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" })}>📋 {t.applyBtn}</button>
-            <a className="btn-wa" href={WA_APPLY} target="_blank" rel="noreferrer">💬 {t.waBtn}</a>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
 }
 
-// ─── EMI CALCULATOR ───────────────────────────────────────────────────────────
+// ─── CALCULATOR ──────────────────────────────────────────────────────────────
 function Calculator({ t }) {
-  const [price, setPrice] = useState(20000);
-  const [down, setDown] = useState(3000);
+  const [price, setPrice] = useState(50000);
+  const [down, setDown] = useState(10000);
   const [months, setMonths] = useState(12);
-  const loan = Math.max(0, price - down);
-  const r = 1.5 / 100;
-  const emi = loan > 0 && months > 0
-    ? Math.round((loan * r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1))
-    : 0;
+  const principal = price - down;
+  const rate = 0.12 / 12;
+  const emi = principal > 0 ? (principal * rate * Math.pow(1 + rate, months)) / (Math.pow(1 + rate, months) - 1) : 0;
   const total = emi * months;
-  const interest = total - loan;
+  const interest = total - principal;
 
   return (
-    <section id="calculator" className="section">
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div className="reveal" style={{ textAlign: "center", marginBottom: 44 }}>
-          <div className="sec-tag">{t.calcTag}</div>
-          <h2 className="sec-title">{t.calcTitle}</h2>
-          <p className="sec-sub" style={{ margin: "0 auto" }}>{t.calcSub}</p>
+    <section id="calc" className="section section-alt">
+      <div className="reveal">
+        <div className="sec-tag">{t.calcTag}</div>
+        <h2 className="sec-title">{t.calcTitle}</h2>
+        <p className="sec-sub">{t.calcSub}</p>
+      </div>
+      <div className="form-box reveal" style={{ transitionDelay: ".1s" }}>
+        <div style={{ marginBottom: "2rem" }}>
+          <label className="calc-label">{t.calcPrice}</label>
+          <input className="calc-input" type="number" value={price} onChange={e => setPrice(+e.target.value)} />
         </div>
-        <div className="calc-grid reveal" style={{ transitionDelay: ".1s" }}>
-          <div className="calc-form">
-            <label className="cl">{t.calcPrice}</label>
-            <input className="ci" type="number" value={price} min={0} onChange={e => setPrice(+e.target.value)} />
-            <label className="cl">{t.calcDown}</label>
-            <input className="ci" type="number" value={down} min={0} max={price} onChange={e => setDown(+e.target.value)} />
-            <label className="cl">{t.calcMonths}</label>
-            <select className="ci" value={months} onChange={e => setMonths(+e.target.value)} style={{ cursor: "pointer" }}>
-              {[3,6,9,12,18,24].map(m => <option key={m} value={m}>{m} Months</option>)}
-            </select>
-            <div style={{ background: "var(--bg)", borderRadius: 10, padding: 16 }}>
-              {[[t.loanAmt, `₹${loan.toLocaleString()}`],[t.totalInt, `₹${interest.toLocaleString()}`],[t.totalAmt, `₹${total.toLocaleString()}`]].map(([l, v]) => (
-                <div key={l} style={{ display: "flex", justifyContent: "space-between", marginBottom: 8, fontSize: ".8rem" }}>
-                  <span style={{ color: "var(--muted)" }}>{l}</span>
-                  <span style={{ fontWeight: 600, color: "var(--heading)" }}>{v}</span>
-                </div>
-              ))}
-            </div>
+        <div className="calc-row">
+          <div>
+            <label className="calc-label">{t.calcDown}</label>
+            <input className="calc-input" type="number" value={down} onChange={e => setDown(+e.target.value)} />
           </div>
-          <div className="calc-result">
-            <div style={{ color: "rgba(255,255,255,.5)", fontSize: ".72rem", fontWeight: 600, letterSpacing: ".12em", textTransform: "uppercase", marginBottom: 10 }}>{t.calcMonthly}</div>
-            <div className="emi-big">₹{emi.toLocaleString()}</div>
-            <div style={{ color: "rgba(255,255,255,.45)", fontSize: ".75rem", marginTop: 6 }}>{t.calcPerMonth} · {months} months</div>
-            <div style={{ width: "100%", background: "rgba(255,255,255,.07)", borderRadius: 12, padding: 18, margin: "24px 0" }}>
-              {[["Principal", loan, "#60a5fa"],["Interest", interest, "#34d399"]].map(([label, val, color]) => (
-                <div key={label} style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                    <div style={{ width: 9, height: 9, borderRadius: "50%", background: color }} />
-                    <span style={{ color: "rgba(255,255,255,.55)", fontSize: ".75rem" }}>{label}</span>
-                  </div>
-                  <span style={{ color: "white", fontSize: ".8rem", fontWeight: 600 }}>₹{val.toLocaleString()}</span>
-                </div>
-              ))}
-            </div>
-            <p style={{ color: "rgba(255,255,255,.3)", fontSize: ".67rem", marginBottom: 18, lineHeight: 1.6 }}>{t.calcDisclaimer}</p>
-            <button className="btn-primary" style={{ width: "100%", justifyContent: "center" }}
-              onClick={() => document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" })}>
-              {t.calcApply}
-            </button>
+          <div>
+            <label className="calc-label">{t.calcMonths}</label>
+            <input className="calc-input" type="number" value={months} onChange={e => setMonths(+e.target.value)} min="3" max="60" />
           </div>
         </div>
+        <div className="calc-result">
+          <div className="calc-result-num">₹{Math.round(emi)}</div>
+          <div className="calc-result-label">{t.calcMonthly}</div>
+          <div style={{ color: "var(--muted)", fontSize: "0.85rem", marginTop: "1rem" }}>
+            {t.loanAmt}: ₹{principal.toLocaleString('en-IN')} | {t.totalInt}: ₹{Math.round(interest).toLocaleString('en-IN')} | {t.totalAmt}: ₹{Math.round(total).toLocaleString('en-IN')}
+          </div>
+        </div>
+        <p style={{ textAlign: "center", color: "var(--muted)", fontSize: "0.8rem", marginTop: "1.5rem" }}>{t.calcDisclaimer}</p>
+        <button className="btn-primary" style={{ width: "100%", marginTop: "1.5rem" }}>{t.calcApply}</button>
       </div>
     </section>
   );
 }
 
-// ─── DOCUMENTS ────────────────────────────────────────────────────────────────
+// ─── DOCUMENTS ───────────────────────────────────────────────────────────────
 function Documents({ t }) {
   return (
-    <section id="documents" className="section section-alt">
-      <div style={{ maxWidth: 820, margin: "0 auto" }}>
-        <div className="reveal" style={{ textAlign: "center", marginBottom: 44 }}>
-          <div className="sec-tag">{t.docsTag}</div>
-          <h2 className="sec-title">{t.docsTitle}</h2>
-          <p className="sec-sub" style={{ margin: "0 auto" }}>{t.docsSub}</p>
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }} className="reveal" style={{ transitionDelay: ".1s" }}>
-          {t.docs.map((d, i) => (
-            <div key={d.title} className="doc-item" style={{ transitionDelay: `${i * .06}s` }}>
-              <div style={{ fontSize: "1.5rem" }}>{d.icon}</div>
-              <div>
-                <div style={{ fontWeight: 700, fontSize: ".9rem", color: "var(--heading)", marginBottom: 2 }}>{d.title}</div>
-                <div style={{ fontSize: ".77rem", color: "var(--muted)" }}>{d.desc}</div>
-              </div>
-              <div style={{ marginLeft: "auto", color: "#22c55e", fontWeight: 700, fontSize: ".77rem" }}>{t.required}</div>
-            </div>
-          ))}
-        </div>
-        <div className="reveal" style={{
-          marginTop: 24,
-          background: "rgba(245,158,11,.08)", border: "1px solid rgba(245,158,11,.3)",
-          borderRadius: 12, padding: 18, display: "flex", gap: 12, alignItems: "flex-start",
-          transitionDelay: ".2s",
-        }}>
-          <span style={{ fontSize: "1.2rem" }}>💡</span>
-          <p style={{ fontSize: ".8rem", color: "var(--muted)", lineHeight: 1.7 }}>{t.proTip}</p>
-        </div>
+    <section id="docs" className="section">
+      <div className="reveal">
+        <div className="sec-tag">{t.docsTag}</div>
+        <h2 className="sec-title">{t.docsTitle}</h2>
+        <p className="sec-sub">{t.docsSub}</p>
+      </div>
+      <div className="grid-3" style={{ marginTop: "3rem" }}>
+        {t.docs.map((doc, i) => (
+          <div key={i} className="service-card reveal" style={{ transitionDelay: `${i * 0.05}s` }}>
+            <span className="service-icon">{doc.icon}</span>
+            <h3>{doc.title}</h3>
+            <p>{doc.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
 }
 
-// ─── TESTIMONIALS ─────────────────────────────────────────────────────────────
+// ─── TESTIMONIALS ────────────────────────────────────────────────────────────
 function Testimonials({ t }) {
   return (
-    <section className="section">
-      <div style={{ maxWidth: 1000, margin: "0 auto" }}>
-        <div className="reveal" style={{ textAlign: "center", marginBottom: 44 }}>
-          <div className="sec-tag">{t.testiTag}</div>
-          <h2 className="sec-title">{t.testiTitle}</h2>
-          <p className="sec-sub" style={{ margin: "0 auto" }}>{t.testiSub}</p>
-        </div>
-        <div className="testi-grid reveal" style={{ transitionDelay: ".1s" }}>
-          {t.testimonials.map((te, i) => (
-            <div key={te.name} className="testi-card" style={{ transitionDelay: `${i * .08}s` }}>
-              <div style={{ color: "#f59e0b", fontSize: ".88rem", marginBottom: 10 }}>{"★".repeat(te.rating)}</div>
-              <p style={{ fontSize: ".9rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 18, fontStyle: "italic" }}>"{te.text}"</p>
-              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                <div style={{ width: 38, height: 38, borderRadius: "50%", background: "linear-gradient(135deg,#2563eb,#60a5fa)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 700, fontSize: ".88rem" }}>
-                  {te.name[0]}
-                </div>
-                <div>
-                  <div style={{ fontWeight: 700, fontSize: ".86rem", color: "var(--heading)" }}>{te.name}</div>
-                  <div style={{ fontSize: ".72rem", color: "var(--muted)" }}>{te.city} · {te.product}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+    <section className="section section-alt">
+      <div className="reveal">
+        <div className="sec-tag">{t.testiTag}</div>
+        <h2 className="sec-title">{t.testiTitle}</h2>
+        <p className="sec-sub">{t.testiSub}</p>
+      </div>
+      <div className="grid-2" style={{ marginTop: "3rem" }}>
+        {t.testimonials.map((testi, i) => (
+          <div key={i} className="testimonial-card reveal" style={{ transitionDelay: `${i * 0.05}s` }}>
+            <div className="stars">{"⭐".repeat(testi.rating)}</div>
+            <p className="testimonial-text">"{testi.text}"</p>
+            <div className="testimonial-author">{testi.name}</div>
+            <div className="testimonial-meta">{testi.product} • {testi.city}</div>
+          </div>
+        ))}
       </div>
     </section>
   );
 }
 
-// ─── APPLY FORM ───────────────────────────────────────────────────────────────
-function ApplyForm({ t }) {
+// ─── APPLY FORM ──────────────────────────────────────────────────────────────
+function ApplyForm({ t, lang }) {
   const [form, setForm] = useState({ name: "", phone: "", city: "", product: "", price: "" });
   const [done, setDone] = useState(false);
   const upd = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));
   const submit = () => {
     if (!form.name || !form.phone || !form.product) { alert("Please fill Name, Phone and Product"); return; }
     const msg = `Namaste Ayush bhai!%0A%0AMujhe Bajaj Finance EMI chahiye.%0A%0ANaam: ${form.name}%0APhone: ${form.phone}%0ACity: ${form.city}%0AProduct: ${form.product}%0APrice: ₹${form.price}%0A%0APlease contact me.`;
-    window.open(`https://wa.me/${WA_NUM}?text=${msg}`, "_blank");
+    window.open(`https://wa.me/${PHONE}?text=${msg}`, "_blank");
     setDone(true);
   };
   return (
@@ -997,15 +1063,15 @@ function ApplyForm({ t }) {
         <div className="form-box reveal" style={{ transitionDelay: ".1s" }}>
           {done ? (
             <div style={{ textAlign: "center", padding: "20px 0" }}>
-              <div style={{ fontSize: "3.5rem", marginBottom: 14 }}>🎉</div>
-              <h3 style={{ fontFamily: "'Yatra One',cursive", fontSize: "1.4rem", color: "var(--heading)", marginBottom: 10 }}>{t.formSuccess}</h3>
+              <div style={{ fontSize: "3.5rem", marginBottom: 14 }}>✅</div>
+              <h3 style={{ fontSize: "1.4rem", color: "var(--heading)", marginBottom: 10, fontWeight: 700 }}>{t.formSuccess}</h3>
               <p style={{ color: "var(--muted)", fontSize: ".88rem", marginBottom: 22 }}>{t.formSuccessMsg}</p>
               <button className="btn-primary" onClick={() => setDone(false)}>{t.formAgain}</button>
             </div>
           ) : (
             <>
-              <div style={{ fontFamily: "'Yatra One',cursive", fontSize: "1.1rem", color: "var(--heading)", marginBottom: 22 }}>
-                📋 Finance Application
+              <div style={{ fontSize: "1.1rem", color: "var(--heading)", marginBottom: 22, fontWeight: 600 }}>
+                📋 {lang === "en" ? "Finance Application" : "वित्त आवेदन"}
               </div>
               <div className="frow">
                 <div><label className="fl">{t.formName} *</label><input className="fi" placeholder="Aapka naam" value={form.name} onChange={upd("name")} /></div>
@@ -1017,7 +1083,7 @@ function ApplyForm({ t }) {
               </div>
               <label className="fl">{t.formProduct} *</label>
               <input className="fi" placeholder="e.g. Samsung TV 43 inch, iPhone 15, LG Washing Machine" value={form.product} onChange={upd("product")} />
-              <button className="btn-wa" style={{ width: "100%", justifyContent: "center", fontSize: ".92rem", padding: "14px" }} onClick={submit}>
+              <button className="btn-wa" style={{ width: "100%", justifyContent: "center", fontSize: ".92rem", padding: "14px", marginTop: "1.5rem" }} onClick={submit}>
                 💬 {t.formSubmit}
               </button>
               <p style={{ textAlign: "center", fontSize: ".7rem", color: "var(--muted)", marginTop: 10 }}>{t.formNote}</p>
@@ -1073,8 +1139,8 @@ function Contact({ t }) {
 function Footer({ t }) {
   return (
     <footer className="footer">
-      <div style={{ fontFamily: "'Yatra One',cursive", fontSize: "1.1rem", color: "white", marginBottom: 4 }}>{t.name}</div>
-      <div style={{ marginBottom: 6 }}>{t.footerRole} · {t.footerCity}</div>
+      <div style={{ fontSize: "1.1rem", color: "white", marginBottom: 4, fontWeight: 700 }}>{t.name}</div>
+      <div style={{ marginBottom: 6, color: "rgba(255,255,255,.7)" }}>{t.footerRole} · {t.footerCity}</div>
       <div style={{ color: "rgba(255,255,255,.3)", fontSize: ".7rem", borderTop: "1px solid rgba(255,255,255,.08)", paddingTop: 14 }}>
         © 2025 {t.name} · Bajaj Finance Authorized Agent ·{" "}
         <a href={WA_LINK} target="_blank" rel="noreferrer">WhatsApp: {PHONE}</a>
@@ -1102,7 +1168,7 @@ export default function App() {
       <Calculator t={t} />
       <Documents t={t} />
       <Testimonials t={t} />
-      <ApplyForm t={t} />
+      <ApplyForm t={t} lang={lang} />
       <Contact t={t} />
       <Footer t={t} />
       <a href={WA_LINK} target="_blank" rel="noreferrer" className="wa-float" title="WhatsApp">💬</a>
